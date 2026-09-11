@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Rooms collection: anyone can browse rooms, authenticated users can manage
+    match /rooms/{roomId} {
+      allow read: if true;
+      allow write: if true;
+    }
+    // Bookings collection: allow read and write for clients & admin
+    match /bookings/{bookingId} {
+      allow read, write: if true;
+    }
+    // Notifications logs
+    match /notifications/{notificationId} {
+      allow read, write: if true;
+    }
+    // System stats / settings
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Bang Hotel - ระบบจองโรงแรมออนไลน์และจัดการห้องพัก",
+  "description": "ระบบจองโรงแรมออนไลน์ รองรับการชำระเงินผ่านบัตรเครดิต แจ้งเตือนผ่านอีเมลและมือถือ ยกเลิกการจองยืดหยุ่น จัดการห้องพักและวิเคราะห์รายได้พร้อมส่งออก PDF เชื่อมต่อ Firebase bang-bf7d8",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
